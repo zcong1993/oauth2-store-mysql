@@ -1,7 +1,7 @@
 module github.com/zcong1993/oauth2-store-mysql
 
 require (
-	github.com/go-oauth2/oauth2 v3.9.0+incompatible // indirect
+	github.com/go-oauth2/oauth2 v3.9.0+incompatible
 	github.com/go-sql-driver/mysql v1.4.0 // indirect
 	github.com/jinzhu/gorm v1.9.1
 	github.com/jinzhu/inflection v0.0.0-20180308033659-04140366298a // indirect
