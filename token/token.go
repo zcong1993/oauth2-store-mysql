@@ -22,7 +22,7 @@ type Token struct {
 	Code      string `json:"code" gorm:"index"`
 	Access    string `json:"access" gorm:"index"`
 	Refresh   string `json:"refresh" gorm:"index"`
-	Data      string `json:"data"`
+	Data      string `json:"data" gorm:"size:500"`
 }
 
 func (t *Token) TableName() string {
