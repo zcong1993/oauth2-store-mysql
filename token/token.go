@@ -19,9 +19,9 @@ func NewStore(db *gorm.DB) *Store {
 type Token struct {
 	gorm.Model
 	ExpiredAt int64  `json:"expired_at" gorm:"index"`
-	Code      string `json:"code" gorm:"index"`
-	Access    string `json:"access" gorm:"index"`
-	Refresh   string `json:"refresh" gorm:"index"`
+	Code      string `json:"code" gorm:"type:varchar(50);index"`
+	Access    string `json:"access" gorm:"type:varchar(50);index"`
+	Refresh   string `json:"refresh" gorm:"type:varchar(50);index"`
 	Data      string `json:"data" gorm:"size:500"`
 }
 
